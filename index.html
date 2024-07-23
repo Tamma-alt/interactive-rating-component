@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+   <section class="container rate-section">
+    <img src="/images/icon-star.svg" alt="start icon" class="p-3 my-4 rounded-full star">
+    <h1 class="sect-head">How did we do?</h1>
+    <p>
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    <div class="rates">
+      <button class="rate-btn" onclick="buttonClicked(1)" >1</button>
+      <button class="rate-btn" onclick="buttonClicked(2)">2</button>
+      <button class="rate-btn" onclick="buttonClicked(3)">3</button>
+      <button class="rate-btn" onclick="buttonClicked(4)">4</button>
+      <button class="rate-btn" onclick="buttonClicked(5)">5</button>
+    </div>
+
+    <button class="submit uppercase font-extrabold" onclick="submitResult()">submit</button>
+   </section>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <section class=" thank-you container hidden">
+    <img src="/images/illustration-thank-you.svg" alt="" class="thank-you-img">
+
+    <div class="result" id="result">You selected <!-- Add rating here --> out of 5</div>
+    <h1 class="sect-head">Thank you!</h1>
+    <p>
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don't hesitate to get in touch!
+    </p>
+  </section>
+
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution hidden">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

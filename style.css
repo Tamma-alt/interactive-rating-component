@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: hsl(25, 97%, 53%);
+    --neutral-cl1: hsl(0, 0%, 100%);
+    --neutral-cl2: hsl(217, 12%, 63%);
+    --neutral-cl3: hsl(213, 19%, 18%);
+    --neutral-cl4: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: black;
+    color: var(--neutral-cl2);
+    font-size: 1em;
+    font-family: 'Overpass', sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 5rem auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: var(--neutral-cl4);
+}
+
+.hidden {
+    display: none;
+}
+
+.star {
+    background-color: var(--neutral-cl3);
+    padding: .5rem;
+    border-radius: 100%;
+}
+
+.sect-head {
+    color: var(--neutral-cl1);
+}
+
+.rates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.rate-btn {
+    background-color: var(--neutral-cl3);
+    color: var(--neutral-cl2);
+    margin: 0 .2rem;
+    padding: .6rem .9rem;
+    border: none;
+    border-radius: 100%;
+}
+
+.rate-btn:hover {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.rate-btn:active {
+    background-color: var(--neutral-cl1);
+    color: black;
+}
+
+.submit {
+    background-color: var(--primary-color);
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 100%;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+
+}
+
+.submit:active {
+    background-color: var(--neutral-cl1);
+}
+
+/* thank you card */
+.thank-you {
+    text-align: center;
+}
+
+.result {
+    background-color: var(--neutral-cl3);
+    color: var(--primary-color);
+    width: 65%;
+    margin: 1rem auto;
+    padding: .5rem;
+    border-radius: 2rem;
+
+}
+
+
+@media screen and (min-width: 600px) {
+    .container {
+        width: 40%;
+    }
+}
